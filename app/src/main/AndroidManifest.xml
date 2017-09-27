@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sgt.hansung.com.suh_gongteo" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- 카메라 사진 -->
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/sgticon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name=".login"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name=".Write"
+            android:label="@string/title_activity_write"
+            android:windowSoftInputMode="adjustUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name=".Search"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name=".SearchFilter"
+            android:label="@string/title_activity_searchfilter" >
+        </activity>
+        <activity
+            android:name=".Detail"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_signup" >
+        </activity>
+        <activity
+            android:name="nl.changer.polypicker.ImagePickerActivity"
+            android:theme="@style/HoloTheme" />
+        <activity android:name=".Management" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="facebook_login" />
+        <activity android:name=".MyInterest" >
+        </activity>
+        <activity
+            android:name=".splash"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".startActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyD5Ztq7smW64EhQGEWKVfDZRalwwhWNCQU" />
+
+        <!-- 릴리즈 용 키 : AIzaSyD5Ztq7smW64EhQGEWKVfDZRalwwhWNCQU -->
+        <!-- 디버그 용 키 : AIzaSyB0cWSgrqdRz3dHS-kn9Ds2pmBJOyZIKo4 -->
+    </application>
+
+</manifest>

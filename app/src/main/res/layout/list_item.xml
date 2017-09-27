@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#f5ebd3">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#ffffff">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:id="@+id/clusterListImg"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="혜화 에듀센터"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+                android:textSize="25sp"
+                android:textColor="#ff841f"
+                android:id="@+id/clusterListTitle"
+                android:gravity="right"
+                />
+            <TextView
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"
+                android:text="유료 : 500원/시간"
+                android:layout_gravity="right"
+                android:id="@+id/clusterListPrice"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"
+                android:textColor="#2d2d2d"
+                android:text="서울시 성동구 금호2가 1004-102"
+                android:id="@+id/clusterListAddress"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

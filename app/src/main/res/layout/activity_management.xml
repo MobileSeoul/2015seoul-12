@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="sgt.hansung.com.suh_gongteo.Management"
+    android:orientation="vertical"
+    android:background="#f5ebd3"
+    >
+    <ListView
+
+        android:id="@+id/manageListView"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:src="@drawable/emptyspace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/empty_space"/>
+
+</RelativeLayout>

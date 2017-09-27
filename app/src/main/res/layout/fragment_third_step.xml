@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LL"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+        <EditText
+            android:id="@+id/signSearchMap"
+            android:layout_width="match_parent"
+            android:layout_weight="90"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:hint="주소를 입력해주세요."
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/bg_parent_rounded_corner"/>
+        <ImageView
+            android:id="@+id/searchBtn"
+            android:layout_height="40dp"
+            android:src="@drawable/search_btn"
+            android:layout_width="97dp"/>
+        <!--<Button-->
+        <!--android:layout_weight="10"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="검색"-->
+        <!--android:id="@+id/searchBtn"-->
+        <!--android:layout_width="wrap_content" />-->
+
+    </LinearLayout>
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/signMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@+id/LL" />
+
+
+</RelativeLayout>

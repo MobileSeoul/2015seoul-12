@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/office"
+        android:title="사무실" />
+    <item
+        android:id="@+id/cafe"
+        android:title="까페" />
+    <item
+        android:id="@+id/concerthall"
+        android:title="공연장" />
+    <item
+        android:id="@+id/conference"
+        android:title="회의실" />
+    <item
+        android:id="@+id/multipurpose"
+        android:title="다목적실" />
+
+</menu>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.hwanik.materialtest.makeStep">
+
+    <item android:id="@+id/prepage"
+        android:title="prepage"
+        android:orderInCategory="200"
+        android:icon="@drawable/pre_icon"
+        app:showAsAction="always"/>
+</menu>

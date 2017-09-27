@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hwanik.materialtest.makeStep">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        - <android.support.v4.view.ViewPager android:id="@+id/step_page" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+        <LinearLayout
+            android:id="@+id/pre_container"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/pre_btn"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#ff841f"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:text="이전페이지"
+                android:onClick="pre_btn"
+                android:layout_gravity="bottom"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/next_btn"
+                android:layout_height="wrap_content"
+                android:background="#de6400"
+                android:textColor="#ffffff"
+                android:text="다음페이지"
+                android:onClick="next_btn"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

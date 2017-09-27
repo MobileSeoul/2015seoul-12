@@ -1,0 +1,415 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_upload_edittext">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5ebd3"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="3000dp">
+            <LinearLayout
+                android:id="@+id/mat_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:text="이용요금"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#4e4e4e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mat_container"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/bg_upload_edittext">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/won"/>
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/cash"
+                        android:layout_width="150dp"
+                        android:paddingLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:hint="무료인경우 0원"
+                        android:textSize="15sp"
+                        android:inputType="number"
+                        app:met_baseColor="#515151"
+                        app:met_primaryColor="#515151"
+                        app:met_hideUnderline="true"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/secondTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="40dp"
+                    android:text="담당자 연락처"
+                    android:textSize="25sp"
+                    android:textColor="#4e4e4e"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mat_container"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/bg_upload_edittext">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/phone_icon"/>
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/phone"
+                        android:layout_width="150dp"
+                        android:paddingLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:hint="'-'없이 입력하세요"
+                        android:textSize="15sp"
+                        android:inputType="phone"
+                        app:met_baseColor="#515151"
+                        app:met_primaryColor="#515151"
+                        app:met_hideUnderline="true"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="40dp"
+                    android:text="최대 수용 인원"
+                    android:textSize="25sp"
+                    android:textColor="#4e4e4e"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mat_container"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/bg_upload_edittext">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/max_people"
+                        android:layout_width="70dp"
+                        android:paddingLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:inputType="number"
+                        app:met_baseColor="#515151"
+                        app:met_primaryColor="#515151"
+                        app:met_hideUnderline="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="명"
+                        android:textSize="15sp"
+                        android:textColor="#4e4e4e"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="40dp"
+                    android:textSize="25sp"
+                    android:text="이용가능한 날짜 / 시간"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#4e4e4e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
+                    <TextView
+                        android:textSize="15dp"
+                        android:text="시작날짜 : "
+                        android:gravity="center"
+                        android:textColor="#4e4e4e"
+                        android:paddingTop="5dp"
+                        android:paddingRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@drawable/bg_upload_edittext"
+                        android:onClick="StartDateSelect">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/clock_icon"
+                            />
+                        <TextView
+                            android:id="@+id/startDate"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:textSize="15dp"
+                        android:paddingTop="5dp"
+                        android:text="종료날짜 : "
+                        android:gravity="center"
+                        android:textColor="#4e4e4e"
+                        android:paddingRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@drawable/bg_upload_edittext"
+                        android:onClick="EndDateSelect">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/clock_icon"
+                            />
+                        <TextView
+                            android:id="@+id/endDate"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/secondTitles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="공간 종류(택1)"
+                    android:textSize="25sp"
+                    android:textColor="#4e4e4e"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mat_container"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/bg_upload_edittext">
+                    <RadioGroup
+                        android:id="@+id/spaceType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/mat_container"
+                        android:layout_alignStart="@+id/mat_container"
+                        android:padding="10dp">
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:paddingRight="5dp">-->
+                        <RadioButton
+                            android:id="@+id/office"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="사무실"/>
+                        <RadioButton
+                            android:id="@+id/cafe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="카페"/>
+                        <RadioButton
+                            android:id="@+id/concert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="공연장"/>
+                        <RadioButton
+                            android:id="@+id/warehouse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="창고"/>
+                        <!--</LinearLayout>-->
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:paddingRight="5dp">-->
+                        <RadioButton
+                            android:id="@+id/sleeping"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="숙박시설"/>
+                        <RadioButton
+                            android:id="@+id/ground"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="공터"/>
+                        <RadioButton
+                            android:id="@+id/public_office"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="공공시설"/>
+                        <RadioButton
+                            android:id="@+id/etc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="기타"/>
+                        <!--</LinearLayout>-->
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/matStep_titles"
+                    android:layout_marginTop="40dp"
+                    android:textSize="25sp"
+                    android:text="공간 옵션"
+                    android:textColor="#4e4e4e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mat_container"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_upload_edittext">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="wifi"
+                            android:id="@+id/checkBox0" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="간식"
+                            android:id="@+id/checkBox1" />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="프로젝터빔"
+                            android:id="@+id/checkBox2" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="조명시설"
+                            android:id="@+id/checkBox4" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="음향시설"
+                            android:id="@+id/checkBox5" />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="취사도구"
+                            android:id="@+id/checkBox6" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="화이트보드"
+                            android:id="@+id/checkBox8" />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="컴퓨터"
+                            android:id="@+id/checkBox9" />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="냉난방시설"
+                            android:id="@+id/checkBox10" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="주차시설"
+                            android:id="@+id/checkBox3" />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="수납공간"
+                            android:id="@+id/checkBox7" />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="기타"
+                            android:id="@+id/checkBox11" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

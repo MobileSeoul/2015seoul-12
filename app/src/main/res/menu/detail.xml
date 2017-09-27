@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Detail">
+    <item
+        android:id="@+id/detail_share"
+        android:icon="@drawable/share"
+        android:title="favorite"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        android:menuCategory="secondary"/>
+    <item
+        android:id="@+id/toggle_interest"
+        android:icon="@drawable/favorite"
+        android:title="favorite"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        android:menuCategory="secondary"/>
+
+</menu>

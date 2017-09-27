@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home"
+            android:title="홈"
+            android:visible="true"/>
+        <item android:id="@+id/nav_login"
+            android:title="로그인"
+            android:visible="true"/>
+        <item android:id="@+id/nav_spaceadd"
+            android:title="공간등록"
+            android:visible="true"/>
+        <item android:id="@+id/nav_info"
+            android:title="개발자정보"
+            android:visible="true"/>
+        <item android:id="@+id/like"
+            android:title="내가 찜한 공간"
+            android:visible="true"/>
+        <item android:id="@+id/nav_spaceManagement"
+            android:title="공간관리"
+            android:visible="true"/>
+        <item android:id="@+id/logout"
+            android:title="로그아웃"
+            android:visible="true"/>
+
+    </group>
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"-->
+    <!--android:title="Share" />-->
+    <!--<item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"-->
+    <!--android:title="Send" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

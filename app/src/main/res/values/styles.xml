@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.Base" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="HoloTheme" parent="@android:style/Theme.Holo.Light">
+    </style>
+
+    <!--<style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar"> &lt;!&ndash; Ligth : 컨텐츠 배경 밝게, DarkAction:액션바 텍스트 어둡게, 액션바를 없애고 커스터마이즈 한다. &ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="colorPrimary">@color/colorPrimary</item>                &lt;!&ndash;ActionBar 생상&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="colorPrimaryDark">@color/colorPrimaryDark</item>        &lt;!&ndash;ActionBar 위 상태표시줄 상단 색값인데 롤리팝 이전 버전은 해당되지 않음&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="colorAccent">@color/colorAccent</item>                  &lt;!&ndash;앱 전체적인 색에 비해 악센트를 줘야 하는 색상 값&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="android:windowBackground">@android:color/white</item>&ndash;&gt;-->
+    <!--</style>-->
+</resources>
+
